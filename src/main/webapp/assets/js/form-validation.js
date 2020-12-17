@@ -6,7 +6,7 @@ course_form.addEventListener('submit', async (e) => {
     e.preventDefault();
     e.stopPropagation();
     if (course_form.checkValidity() === true) {
-        let response = await fetch('http://localhost:8083/ERP_NEW_war/api/courses/register', {
+        let response = await fetch('http://localhost:8082/ERP_NEW_war_exploded/api/courses/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
@@ -29,7 +29,7 @@ course_form.addEventListener('submit', async (e) => {
 });
 
 async function fetch_courses(){
-    let response = await fetch("http://localhost:8083/ERP_NEW_war/api/courses/get");
+    let response = await fetch("http://localhost:8082/ERP_NEW_war_exploded/api/courses/get");
     let Term = await response.json(); // read response body and parse as JSON
     console.log(Term);
     let courses_option = document.getElementById('Term');

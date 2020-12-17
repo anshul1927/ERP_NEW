@@ -12,7 +12,9 @@ import java.util.List;
 
 
 @Path("courses")
-public class CoursesController {
+public class
+
+CoursesController {
 
 
     @GET
@@ -44,7 +46,7 @@ public class CoursesController {
         System.out.println(course.getFaculty());
         CoursesService coursesService = new CoursesService();
         System.out.println("a1");
-        coursesService.addStudent(course);
+        coursesService.addCourses(course);
         System.out.println("a2");
         return Response.ok().build();
     }
