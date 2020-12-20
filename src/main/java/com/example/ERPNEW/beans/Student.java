@@ -1,9 +1,10 @@
 package com.example.ERPNEW.beans;
 import  javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table (name = "Student")
-public class Student {
+public class Student  implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column

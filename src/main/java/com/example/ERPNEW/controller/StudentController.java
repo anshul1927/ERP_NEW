@@ -31,9 +31,28 @@ public class StudentController {
         StudentServices studentService = new StudentServices();
         System.out.println("a1");
         studentService.addStudent(student);
-        studentService.fetchStudent(student);
+        studentService.fetchStudent();
         System.out.println("a2");
         return Response.ok().build();
     }
 
-}
+
+    @POST
+    @Path("/login")
+   // @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response loginStudent(Student student) throws URISyntaxException {
+        StudentServices studentServices= new StudentServices();
+;        List<Student> students = new ArrayList<Student>();
+        students  = studentServices.fetchTT(student);
+        if(students == null){
+            return Response.noContent().build();
+        }
+
+        return Response.ok(students).build();
+    }
+    }
+
+
+
+

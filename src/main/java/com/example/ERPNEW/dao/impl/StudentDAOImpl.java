@@ -10,6 +10,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -34,13 +35,13 @@ public class StudentDAOImpl implements StudentDAO {
     @Override
     public void fetchStudent()
     {
-        Transaction tx = null;
+
         System.out.println("inside fetch function");
         try(Session session = SessionUtil.getSession())
         {
 
-            tx=session.beginTransaction();
-            String hql = "SELECT cgpa FROM student";
+//            session.beginTransaction();
+            String hql = "FROM Student";
 
             Query query = session.createQuery(hql);
             System.out.println("query::::");
@@ -58,6 +59,27 @@ public class StudentDAOImpl implements StudentDAO {
 
         }
 
+    @Override
+    public ArrayList<Student> fetchTT(Student student) {
+
+        ArrayList<Student> students = new ArrayList<Student>();
+        System.out.println("inside fetch tt");
+        try(Session session = SessionUtil.getSession())
+        {
+
+
+                 session.beginTransaction();
+                 students = (ArrayList<Student>) session.createQuery("FROM Student where cgpa=4 ").list();
+          //      query.setParameter("cgpa", student.getCgpa());
+//                for (final Object fetch : query.list()) {
+//                    return ArrayList<Student> fetch;
+//                }
+            return students;
+            } catch (HibernateException exception) {
+            System.out.print(exception.getLocalizedMessage());
+            return null;
+        }
+    }
 }
 
 
