@@ -43,7 +43,7 @@ public class StudentController {
     @Produces(MediaType.APPLICATION_JSON)
     public Response loginStudent(Student student) throws URISyntaxException {
         StudentServices studentServices= new StudentServices();
-;        List<Student> students = new ArrayList<Student>();
+        List<Student> students = new ArrayList<Student>();
         students  = studentServices.fetchTT(student);
         if(students == null){
             return Response.noContent().build();

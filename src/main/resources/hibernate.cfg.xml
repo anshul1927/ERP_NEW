@@ -14,5 +14,6 @@
         <property name="show_sql">true</property>
         <mapping class="com.example.ERPNEW.beans.Courses" />
         <mapping class="com.example.ERPNEW.beans.Student" />
+        <mapping class="com.example.ERPNEW.beans.Employee" />
     </session-factory>
 </hibernate-configuration>
