@@ -1,53 +1,55 @@
-//package com.example.ERPNEW.beans;
-//
-//import javax.persistence.*;
-//
-//@Entity
-//
-//public class Student_Courses {
-//
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Integer id;
-//    @OneToMany(cascade = CascadeType.ALL , fetch = FetchType.LAZY)
-//    @JoinColumn(name = "course_id", referencedColumnName = "course_id")
-//    private Courses course_id;
-//    @OneToMany(cascade = CascadeType.ALL , fetch = FetchType.LAZY)
-//    @JoinColumn(name = "student_id", referencedColumnName = "student_id")
-//    private Student student_id;
-//
-//
-//    public Student_Courses(Integer id, Students student_id, Courses course_id) {
-//        this.id = id;
-//        this.student_id = student_id;
-//        this.course_id = course_id;
-//    }
-//
-//    public Student_Courses() {
-//
-//    }
-//
-//    public Integer getId() {
-//        return id;
-//    }
-//
-//    public void setId(Integer id) {
-//        this.id = id;
-//    }
-//
-//    public Students getStudent_id() {
-//        return student_id;
-//    }
-//
-//    public void setStudent_id(Students student_id) {
-//        this.student_id = student_id;
-//    }
-//
-//    public Courses getCourse_id() {
-//        return course_id;
-//    }
-//
-//    public void setCourse_id(Courses course_id) {
-//        this.course_id = course_id;
-//    }
-//}
+package com.example.ERPNEW.beans;
+
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+
+public class Student_Courses {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    @OneToMany(cascade = CascadeType.ALL , fetch = FetchType.LAZY)
+    @JoinTable(name = "Courses", joinColumns = {@JoinColumn(name = "course_id")},
+            inverseJoinColumns = {@JoinColumn(name = "course_id")})
+            private List<Courses> courses;
+    @OneToMany(cascade = CascadeType.ALL , fetch = FetchType.LAZY)
+    @JoinTable(name = "Students", joinColumns = {@JoinColumn(name = "student_id")},
+    inverseJoinColumns = {@JoinColumn(name = "student_id")})
+    private List<Student> students;
+
+
+    public Student_Courses(List<Courses> courses, List<Student> students) {
+        this.courses = courses;
+        this.students = students;
+    }
+
+    public Student_Courses() {
+
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public List<Courses> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Courses> courses) {
+        this.courses = courses;
+    }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
+    }
+}

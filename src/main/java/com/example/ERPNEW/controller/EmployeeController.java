@@ -1,9 +1,8 @@
 package com.example.ERPNEW.controller;
 
 import com.example.ERPNEW.beans.Employee;
-import com.example.ERPNEW.beans.Student;
 import com.example.ERPNEW.services.EmployeeServices;
-import com.example.ERPNEW.services.StudentServices;
+
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;

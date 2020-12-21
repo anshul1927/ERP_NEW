@@ -15,5 +15,10 @@
         <mapping class="com.example.ERPNEW.beans.Courses" />
         <mapping class="com.example.ERPNEW.beans.Student" />
         <mapping class="com.example.ERPNEW.beans.Employee" />
+        <mapping class="com.example.ERPNEW.beans.Student_Courses" />
+        <mapping class="com.example.ERPNEW.beans.Course_Domain" />
+        <mapping class="com.example.ERPNEW.beans.Domain" />
+        <mapping class="com.example.ERPNEW.beans.Course_Schedule" />
+
     </session-factory>
 </hibernate-configuration>
