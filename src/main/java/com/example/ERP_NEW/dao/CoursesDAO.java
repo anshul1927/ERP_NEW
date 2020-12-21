@@ -1,5 +1,5 @@
-package com.example.ERPNEW.dao;
-import com.example.ERPNEW.beans.Courses;
+package com.example.ERP_NEW.dao;
+import com.example.ERP_NEW.beans.Courses;
 
 public interface CoursesDAO {
     public abstract void addCourses(Courses course);

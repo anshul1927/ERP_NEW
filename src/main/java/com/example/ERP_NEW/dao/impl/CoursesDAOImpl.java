@@ -1,8 +1,8 @@
-package com.example.ERPNEW.dao.impl;
+package com.example.ERP_NEW.dao.impl;
 
-import com.example.ERPNEW.beans.Courses;
-import com.example.ERPNEW.dao.CoursesDAO;
-import com.example.ERPNEW.util.SessionUtil;
+import com.example.ERP_NEW.beans.Courses;
+import com.example.ERP_NEW.dao.CoursesDAO;
+import com.example.ERP_NEW.util.SessionUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 

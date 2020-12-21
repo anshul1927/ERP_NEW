@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ERPNEW" />
+        <module name="ERP_NEW" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ERPNEW" target="9" />
+      <module name="ERP_NEW" target="9" />
     </bytecodeTargetLevel>
   </component>
 </project>

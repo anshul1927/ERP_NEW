@@ -1,6 +1,8 @@
-package com.example.ERPNEW.beans;
+package com.example.ERP_NEW.beans;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "courses")
@@ -29,6 +31,12 @@ public class Courses {
     @Column
     private String faculty;
 
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "Student_Courses", joinColumns = {@JoinColumn(name = "course_id")},
+            inverseJoinColumns = {@JoinColumn(name = "course_id")})
+    @ManyToOne(cascade = CascadeType.ALL , fetch = FetchType.EAGER)
+    private Course_Schedule course_schedule;
+
     public Courses(String course_code, String name, String description, Integer year, Integer term, Integer credits, Integer capacity, String faculty) {
         this.course_code = course_code;
         this.name = name;
@@ -39,6 +47,7 @@ public class Courses {
         this.capacity = capacity;
         this.faculty = faculty;
     }
+
 
     public String getCourse_code() {
         return course_code;

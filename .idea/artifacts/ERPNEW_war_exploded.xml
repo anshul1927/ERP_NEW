@@ -11,7 +11,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="ERPNEW" />
+          <element id="module-output" name="ERP_NEW" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet:2.31" />
@@ -64,7 +64,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/ERPNEW-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="ERPNEW/web/Web" />
+      <element id="javaee-facet-resources" facet="ERP_NEW/web/Web" />
     </root>
   </artifact>
 </component>

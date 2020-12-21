@@ -1,6 +1,6 @@
-package com.example.ERPNEW.services;
-import com.example.ERPNEW.beans.Courses;
-import com.example.ERPNEW.dao.impl.CoursesDAOImpl;
+package com.example.ERP_NEW.services;
+import com.example.ERP_NEW.beans.Courses;
+import com.example.ERP_NEW.dao.impl.CoursesDAOImpl;
 
 
 public class CoursesService {

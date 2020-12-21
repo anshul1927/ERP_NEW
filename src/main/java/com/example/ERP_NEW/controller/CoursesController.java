@@ -1,7 +1,7 @@
-package com.example.ERPNEW.controller;
+package com.example.ERP_NEW.controller;
 
-import com.example.ERPNEW.beans.Courses;
-import com.example.ERPNEW.services.CoursesService;
+import com.example.ERP_NEW.beans.Courses;
+import com.example.ERP_NEW.services.CoursesService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

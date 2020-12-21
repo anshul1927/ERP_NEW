@@ -1,10 +1,7 @@
-package com.example.ERPNEW.beans;
+package com.example.ERP_NEW.beans;
 import javax.persistence.*;
-import java.sql.Time;
-import java.util.List;
 
-import javax.persistence.*;
-   @Entity
+@Entity
    @Table(name = "Employee")
     public class Employee {
         @Id

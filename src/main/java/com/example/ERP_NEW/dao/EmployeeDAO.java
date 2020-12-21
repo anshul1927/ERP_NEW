@@ -1,8 +1,6 @@
-package com.example.ERPNEW.dao;
+package com.example.ERP_NEW.dao;
 
-import com.example.ERPNEW.beans.Employee;
-
-import java.util.ArrayList;
+import com.example.ERP_NEW.beans.Employee;
 
 public interface EmployeeDAO {
 

@@ -1,4 +1,4 @@
-package com.example.ERPNEW.beans;
+package com.example.ERP_NEW.beans;
 
 
 import javax.persistence.*;

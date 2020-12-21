@@ -1,6 +1,6 @@
-package com.example.ERPNEW.services;
-import com.example.ERPNEW.beans.Student;
-import com.example.ERPNEW.dao.impl.StudentDAOImpl;
+package com.example.ERP_NEW.services;
+import com.example.ERP_NEW.beans.Student;
+import com.example.ERP_NEW.dao.impl.StudentDAOImpl;
 
 import java.util.ArrayList;
 

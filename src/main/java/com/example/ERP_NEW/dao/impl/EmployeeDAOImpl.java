@@ -1,14 +1,10 @@
-package com.example.ERPNEW.dao.impl;
+package com.example.ERP_NEW.dao.impl;
 
-import com.example.ERPNEW.beans.Employee;
-import com.example.ERPNEW.dao.EmployeeDAO;
-import com.example.ERPNEW.util.SessionUtil;
+import com.example.ERP_NEW.beans.Employee;
+import com.example.ERP_NEW.dao.EmployeeDAO;
+import com.example.ERP_NEW.util.SessionUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.query.Query;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 public class EmployeeDAOImpl implements EmployeeDAO {
 

@@ -1,4 +1,4 @@
-package com.example.ERPNEW.util;
+package com.example.ERP_NEW.util;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

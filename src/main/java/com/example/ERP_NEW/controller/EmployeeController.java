@@ -1,7 +1,7 @@
-package com.example.ERPNEW.controller;
+package com.example.ERP_NEW.controller;
 
-import com.example.ERPNEW.beans.Employee;
-import com.example.ERPNEW.services.EmployeeServices;
+import com.example.ERP_NEW.beans.Employee;
+import com.example.ERP_NEW.services.EmployeeServices;
 
 
 import javax.ws.rs.Consumes;
@@ -11,8 +11,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.List;
 
 @Path("/Employee")
 public class EmployeeController {

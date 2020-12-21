@@ -1,14 +1,10 @@
-package com.example.ERPNEW.dao.impl;
+package com.example.ERP_NEW.dao.impl;
 
-import com.example.ERPNEW.beans.Courses;
-import com.example.ERPNEW.beans.Employee;
-import com.example.ERPNEW.beans.Student;
-import com.example.ERPNEW.dao.CoursesDAO;
-import com.example.ERPNEW.dao.StudentDAO;
-import com.example.ERPNEW.util.SessionUtil;
+import com.example.ERP_NEW.beans.Student;
+import com.example.ERP_NEW.dao.StudentDAO;
+import com.example.ERP_NEW.util.SessionUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
 import java.util.ArrayList;
