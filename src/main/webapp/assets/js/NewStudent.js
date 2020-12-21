@@ -4,7 +4,7 @@ student_form.addEventListener('submit', async (e) => {
     e.preventDefault();
     e.stopPropagation();
     if (student_form.checkValidity() === true) {
-        let response = await fetch('http://localhost:8082/ERP_NEW_war_exploded/api/Student/putStu', {
+        let response = await fetch('http://localhost:8083/ERP_NEW_war_exploded/api/Student/putStu', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'

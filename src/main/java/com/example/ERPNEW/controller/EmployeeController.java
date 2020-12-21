@@ -37,18 +37,18 @@ public class EmployeeController {
     }
 
 
-    @POST
-    @Path("/loginEmp")
-    // @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response loginEmp(Employee employee) throws URISyntaxException {
-        EmployeeServices employeeServices= new EmployeeServices();
-        List<Employee> employees = new ArrayList<Employee>();
-        employees  = employeeServices.checkemp(employee);
-        if(employees == null){
-            return Response.noContent().build();
-        }
-
-        return Response.ok(employees).build();
-    }
+//    @POST
+//    @Path("/loginEmp")
+//    // @Consumes(MediaType.APPLICATION_JSON)
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public Response loginEmp(Employee employee) throws URISyntaxException {
+//        EmployeeServices employeeServices= new EmployeeServices();
+//        List<Employee> employees = new ArrayList<Employee>();
+//        employees  = employeeServices.checkemp(employee);
+//        if(employees == null){
+//            return Response.noContent().build();
+//        }
+//
+//        return Response.ok(employees).build();
+//    }
 }
