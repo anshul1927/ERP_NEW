@@ -9,7 +9,7 @@
         <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
         <init-param>
             <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>com.example.ERPNEW</param-value>
+            <param-value>com.example.ERP_NEW</param-value>
         </init-param>
 
         <init-param>
@@ -23,6 +23,6 @@
         <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
+        <welcome-file>login.html</welcome-file>
     </welcome-file-list>
 </web-app>
